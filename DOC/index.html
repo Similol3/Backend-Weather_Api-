@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API Documentation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 2rem;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #444;
+      }
+      pre {
+        background: #eee;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather API Documentation</h1>
+      <p>
+        Welcome to the Weather API documentation. This guide provides all the
+        information you need to use the API effectively.
+      </p>
+
+      <h2>Getting Started</h2>
+      <p>To start using the Weather API, follow these steps:</p>
+      <ol>
+        <li>
+          Install the project dependencies as described in the README file.
+        </li>
+        <li>
+          Run the development server using the command:
+          <code>python manage.py runserver</code>.
+        </li>
+        <li>Access the API at <code>http://127.0.0.1:8000/</code>.</li>
+      </ol>
+
+      <h2>API Endpoints</h2>
+      <p>Below are the available endpoints:</p>
+      <ul>
+        <li><strong>GET /weather/</strong>: Fetch weather data.</li>
+        <li><strong>POST /weather/</strong>: Add new weather data.</li>
+      </ul>
+
+      <h2>Examples</h2>
+      <h3>Fetching Weather Data</h3>
+      <pre>
+GET /weather/
+Response:
+{
+    "location": "New York",
+    "temperature": "15°C",
+    "condition": "Cloudy"
+}
+        </pre
+      >
+
+      <h3>Adding Weather Data</h3>
+      <pre>
+POST /weather/
+Request Body:
+{
+    "location": "Los Angeles",
+    "temperature": "25°C",
+    "condition": "Sunny"
+}
+Response:
+{
+    "message": "Weather data added successfully."
+}
+        </pre
+      >
+
+      <h2>Contact</h2>
+      <p>
+        If you have any questions or issues, please contact
+        [your-email@example.com].
+      </p>
+    </div>
+  </body>
+</html>
