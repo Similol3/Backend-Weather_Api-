@@ -11,8 +11,9 @@ class WeatherDetailView(View):
         city = request.GET.get('city')
         aqi = request.GET.get('aqi', 'no')
 
-        #get city from jason payload if not in query params
-        City
+        #get city from json payload if not in query params
+        if not city:
+            city = request.body.get('city')
 
         if not city:
             return JsonResponse({"error": "City parameter is required"}, status=400)
